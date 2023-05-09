@@ -4,6 +4,8 @@ const app = express();
 
 app.set("view engine", "ejs");
 
+app.use("/assets", express.static("assets"));
+
 app.get("/profile/:name", function (req, res) {
     // console.log(req.params.name);
 
@@ -14,6 +16,7 @@ app.get("/profile/:name", function (req, res) {
 })
 
 app.get("/login", function (req, res) {
+    console.log(req.query);
     res.render("login")
 })
 
