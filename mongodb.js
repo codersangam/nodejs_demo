@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const User = require('./users');
+const User = require('./models/users');
 
 mongoose.connect("mongodb+srv://sangamrobo:TlBr0plrcCgiWCih@cluster0.zikxtpe.mongodb.net/demo_db", { useNewUrlParser: true });
 
